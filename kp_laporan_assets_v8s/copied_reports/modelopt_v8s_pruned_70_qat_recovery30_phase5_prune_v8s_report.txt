@@ -1,0 +1,30 @@
+PHASE 5 - PRUNING YOLOv8s-seg DENGAN NVIDIA ModelOpt
+================================================================================
+Input model     : /home/pep-admin/croptic/croptic-segmentation/runs/segmentv2/yolov8s_tune_weighted_150/exp/weights/best.pt
+Safe dataset    : /home/pep-admin/croptic/croptic-segmentation/dataset/lahan_gabungan_yolo_standard_split/2026-04-24_split/dataset.yaml
+Run dir         : /home/pep-admin/croptic/croptic-segmentation/runs/segmentv2/modelopt_v8s_pruned_70_qat_recovery30
+Prune FLOPs     : 70%
+Epochs recovery : 30
+Best model      : /home/pep-admin/croptic/croptic-segmentation/runs/segmentv2/modelopt_v8s_pruned_70_qat_recovery30/weights/best.pt
+Best size MB    : 27.929
+Elapsed minutes : 6.79
+
+Final metrics:
+{
+    "precision_B": 0.7453885152772078,
+    "recall_B": 0.7870356640785685,
+    "mAP50_B": 0.7813585405691917,
+    "mAP50_95_B": 0.608712084507177,
+    "precision_M": 0.742498133090742,
+    "recall_M": 0.7766944428086279,
+    "mAP50_M": 0.7741061512530756,
+    "mAP50_95_M": 0.5128520230253166,
+    "speed_preprocess_ms": 0.5034618079662323,
+    "speed_inference_ms": 2.155851127941217,
+    "speed_loss_ms": 0.00031731341645788787,
+    "speed_postprocess_ms": 1.0824405028721067,
+    "speed_total_ms": 3.741753
+}
+
+Catatan dataset:
+Dataset digunakan sebagai input baca melalui dataset.yaml asli. Output training, pruning, validasi, dan report disimpan ke folder runs.

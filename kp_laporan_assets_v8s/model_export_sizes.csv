@@ -1,0 +1,3 @@
+source,relative_path,extension,size_mb,category,copied_to
+pruning,modelopt_v8s_pruned_70_qat_recovery30/weights/best.pt,.pt,27.929,model_export,
+pruning,modelopt_v8s_pruned_70_qat_recovery30/weights/last.pt,.pt,27.929,model_export,
